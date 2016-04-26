@@ -59,10 +59,40 @@ nav i{
 #mobile-banking ul{
 	list-style: none;
 	padding-left: 0;
-
 }
 
+#hero {
+	background-color: #333;
+	padding-top: 200px;
+	background-image: url(../img/2.png);
+	background-repeat: no-repeat;
+	background-size:100%;
+	max-width: 1346px;
+	margin:0 auto;
 
+}
+#hero > p{
+	background-color: #fff;
+	display: inline-block;
+	padding: 10px;
+	float: right;
+}
+#hero div{
+	background-color:inherit;
+	padding:10px;
+	text-align: center;
+	clear:both;
+}
+#hero a{
+	background-color:#fff;
+	padding: 10px;
+	color:#189dcf; 
+	display: inline-block;
+	text-decoration: none;
+}
+#hero button{
+	display: none;
+}
 
 
 
@@ -87,7 +117,6 @@ nav i{
 		display: block;
 		list-style: none;
 		margin:0;
-
 	}
 
 	#hamburger{
@@ -121,7 +150,25 @@ nav i{
 	nav a span{
 		display: none;
 	}
-
+	#hero{
+		position: relative;
+		background-size: auto;
+		background-position: right;
+	}
+	#hero:after{
+		content: '';
+		display: block;
+		clear:both;
+	}
+	#hero div{
+		position: absolute;
+		top:0;
+		left: 0;
+		width:300px;
+	}
+	#hero > p{
+		margin-bottom: 0;
+	}
 }
 
 
@@ -135,20 +182,21 @@ nav i{
 	}
 
 
-
-
-
-
-
-
-
-
-
-
-
 }
 
-
+@media all and (min-width: 1020px){
+	#hero button{
+		display: block;
+		position: absolute;
+		top: 50%;
+	}
+	#prev{
+		left:0;
+	}
+	#next{
+		right:0;
+	}
+}
 
 
 
