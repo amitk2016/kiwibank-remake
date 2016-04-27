@@ -1,5 +1,6 @@
 body{
 	margin:0;
+	background-color: #eaeaea;
 }
 nav{
 	background-color: #69a31e;
@@ -97,6 +98,7 @@ nav i{
 #products{
 	text-align: center;
 	padding: 10px;
+	background-color: #fff;
 }
 
 #products h1{
@@ -186,7 +188,10 @@ nav i{
 @media all and (min-width: 600px){
 	#mobile-banking {
 		display: none;
-	
+	}
+	#products{
+		width: 500px;
+		margin: 0 auto;
 	}
 }
 
@@ -256,6 +261,47 @@ nav i{
 	}
 }
 
+@media all and (min-width: 860px) {
+
+	#products div:first-child{
+		width:50%;
+		float: left;
+	}
+
+	#products {
+		width:auto;
+		max-width: 1346px;
+		text-align: left;
+		position: relative;
+		padding:0 120px 20px 120px;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+	#products:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.percentage {
+		float: right;
+	}
+	.percentage+a {
+		clear:both;
+		position: absolute;
+		bottom: 10px;
+		right: 120px;
+
+	}
+}
+
+
+
+
+
+
+
+
+
 
 @media all and (min-width: 970px){
 
@@ -274,12 +320,23 @@ nav i{
 		display: block;
 		position: absolute;
 		top: 50%;
-	}
+	} 
+
 	#prev{
 		left:0;
 	}
+
 	#next{
 		right:0;
+	}
+
+}
+
+@media all and (min-width: 1346px){
+	#products,#hero{
+		border-left: 1px solid #ddd;
+		border-right: 1px solid #ddd;
+		box-sizing: border-box;
 	}
 }
 
